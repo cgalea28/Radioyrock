@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/noticia-conciertos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="js/noticia-conciertos.js" defer></script>
+    <title>DeWolff en Madrid</title>
+</head>
+
+<body>
+    <div class="Lightbox">
+        <button class="Lightbox-cerrar">
+            <svg class="Lightbox-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+        </button>
+        
+        <div class="Lightbox-newsletter">
+            <h2 class="Lightbox-newsletter-h2">Suscríbete a nuestra newsletter</h2>
+            
+            <p class="Lightbox-newsletter-p">Un correo semanal para leer tranquilamente, <b>sin spam.</b></p>
+            <p class="Lightbox-newsletter-p">Toda la actualidad a ritmo de riff 🎸... Y en un solo lugar: tu bandeja de entrada</p>
+
+            <form action="#" class="Lightbox-form Form">
+                <div class="Form-group  Form-group--With-error-field">
+                    <label for="text">Tu nombre</label>
+                    <input type="text" id="text" placeholder="Nombre y apellido" autocomplete="off">
+                    <label for="email">Dirección de email</label>
+                    <span class="Error">Email requerido</span>
+                    <input type="email" id="email" placeholder="email@email.com" autocomplete="off">   
+                </div>
+                <input class="Form-button" //!disabled type="submit" value="Suscríbete a Radio&Rock">
+            </form>
+
+        </div>
+    </div>
+
+    <header class="Header">
+        <div class="Header-sup">
+            <ul class="Header-redes Redes">
+                <li class="Redes-li">
+                    <a href="https://www.instagram.com/radioyrock/" class="Redes-a" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title />
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="Redes-li">
+                    <a href="mailto:radioyrock.gmc@gmail.com" class="Redes-a" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="Redes-li">
+                    <a href="https://open.spotify.com/user/r953s5d3l5vtt7dio5edq7sb3?si=b8666b39d0f14eab"
+                        class="Redes-a" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <h1 class="Header-logo">
+                <a href="index.html" class="Header-a">
+                    <picture class="Header-picture">
+                        <img src="assets/logo.png" alt="Radio & Rock logo">
+                    </picture>
+                </a>
+            </h1>
+            <a href="#" class="Header-btn">Suscríbete</a>
+        </div>
+        <div class="Header-inf">
+            <div class="Header-lupa">
+                <form action="#" class="Buscar-bar">
+                    <input type="text" placeholder="  Busca aquí" name="Q">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <button class="Header-button">
+                <svg class="Header-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                            }
+                        </style>
+                    </defs>
+                    <title />
+                    <path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z" />
+                    <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+                    <path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+                </svg>
+            </button>
+            <nav class="Header-nav IsActive">
+                <ul class="Nav-ul">
+                    <li class="Nav-li"><a href="index.html" class="Nav-a">Inicio</a></li>
+                    <li class="Nav-li"><a href="music-pills.html" class="Nav-a">Music Pills</a></li>
+                    <li class="Nav-li"><a href="reviews.html" class="Nav-a">Reseñas</a></li>
+                    <li class="Nav-li"><a href="conciertos.html" class="Nav-a">Conciertos</a></li>
+                    <li class="Nav-li"><a href="#" class="Nav-a">Fotografías</a></li>
+                    <li class="Nav-li"><a href="#" class="Nav-a">Newsletter R&R</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="Main">
+
+        <section class="Main-titular Titulo">
+            <h2 class="Titulo-seccion"><a href="conciertos.html">Conciertos</a></h2>
+            <div class="Titulo-titulares">
+                <h2 class="Titulo-titular">DeWolff en Madrid (23.02.2023)</h2>
+                <h4 class="Titulo-entradilla">Un frío en la calle que te hiela hasta el tuétano. Un calor dentro de la sala Mon con DeWolff que te arde hasta la punta de los dedos. Un alarde de sonido, calidad y rock a la altura de <i>Love, Death & In Between</i> (Mascot Records, 2023), que presentaron en suelo español por Madrid, Bilbao, Avilés, Barcelona y Zaragoza.</h4>
+                <span class="Firma-h4"> <b>Celia Galeano</b> 14 abril 2025</span>
+            </div>
+        </section>
+        
+
+        <div class="Main-foto Foto">
+            <picture class="Foto-picture">
+                 <img src="assets/c-dewolff.webp" alt="DeWolff Madrid" class="Foto-img"> 
+            </picture>
+         </div>
+
+        <div class="Main-texto Texto">
+            <p class="Parrafo-p">Todo vendido, ni un alfiler entraba en la sala Mon de Madrid el jueves 23 de febrero, día escogido por <b>DeWolff</b> para presentar <i><b>Love, Death & In Between</b></i>. Un disco cuajado en los <b>estudios Kerwax</b> (Francia), centrados en la grabación con material analógico, y tocado en directo con todos los implicados para conseguir ese efecto de comunión con quien lo escucha. <b>The Grand East</b> fueron el extra de batería que faltase en el cuerpo de alguna de las almas presentes. Con pasillo incluido entre el público para divertirse como críos, dejaron a media sala con la boca abierta por la grata sorpresa que supuso el conjunto holandés, aunque cualquiera lo diría con ese sonido sureño y casi terroso que se gastaban en canciones como ‘Kiss The Devil’. El prolongado aplauso que recibieron al irse casi se podía unir al comienzo del concierto de los propios DeWolff, con el arranque de la veloz ‘Night Train’ y ‘Heart Stopping Kinda Show’. “Are you ready for the Night Train?”, preguntaba un intenso <b>Pavlo Van de Poel</b>, deseoso de reunirnos a todos en el mismo lugar. Casi se pierde para algunos, porque ambos conciertos se adelantaron casi un cuarto de hora sobre la hora prevista, lo que pilló de sorpresa a parte del público por la rapidez y la limitada duración de ambos, sobre todo del primero. Hay que recordar que la sala Mon no es solo para música en directo, también funciona como discoteca. Y siendo jueves, en zona universitaria, parecía haber cierta prisa para la segunda parte de la noche.</p>
+            <p class="Parrafo-p">“All aboard the night train!”. Y menos mal, ¡qué frenesí, qué lugar más libre de juicio y de tristeza! Qué homenaje encubierto a las grandes influencias de ‘Night Train’: el <b><i>Then Play On</i></b> (Warner, 1969) de <b>Fleetwood Mac</b> y a ‘This Train’ de <b>Sister Rosetta Tharpe</b>, como ellos mismos han contado. El repertorio de los <b>hermanos Van de Poel</b> y de <b>Robin Piso</b> introdujo un poco más de variedad que otros anteriores de la gira. Fue una grata sorpresa errar en las canciones candidatas a vertebrar la noche, pues el magnífico <b><i>Tascam Tapes</i></b> (Mascot Records, 2020) tuvo su representación con ‘Made It To 27’. Qué disco, qué forma de sonar cañón en la distancia, a pesar de que el COVID19 campase a sus anchas por entonces y nos privase de la correspondiente presentación en directo. Hubo una ligera lagrimita de emoción al escuchar una parte de ‘Wontcha Wontcha’, uno de los momentos culmen de un disco que tiene muchos picos de éxtasis rockero en su interior, y una canción que grita a los cuatro vientos contra la excesiva tecnología que nos domina y que adormece lo más creativo de nuestro ser. Cierto es que no hubo vientos ni coros, pero con los tres DeWolff bastó y sobró para sacar el mismo repertorio… Y tremendo momento instrumental que fue digno de retratar en un vídeo para la posteridad. Qué regalo, sin ellos saberlo, estaban haciendo a más de una de las asistentes.</p>
+            
+            <div class=" Portada-hero Carrousel">
+                <div class="Carrousel-container">
+                    <div class="Carrousel-cont">
+                        <img src="assets/c-dewolffbn.webp" alt="Dewolff La Riviera concierto Madrid" class="Carrousel-img">
+                    </div>
+                    <div class="Carrousel-cont">
+                        <img src="assets/c-dewolff-two.webp" alt="Moderat Noches del Botánico concierto Madrid" class="Carrousel-img">
+                    </div>
+                    <div class="Carrousel-cont">
+                        <img src="assets/c-dewolff-hammond.webp" alt="Rival Sons La Riviera concierto Madrid" class="Carrousel-img">
+                    </div>
+                    <div class="Carrousel-cont">
+                        <img src="assets/c-grand-east.webp" alt="Rival Sons La Riviera concierto Madrid" class="Carrousel-img">
+                    </div>
+                </div>
+            
+                <button class="Carrousel-arrow Next">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Carrousel-svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                        <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+                <button class="Carrousel-arrow Prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="Carrousel-svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                      </svg>
+                </button>
+            
+                <ul class="Carrousel-ul">
+                    <li class="Carrousel-li"><button class="Carrousel-point isActive"></button></li>
+                    <li class="Carrousel-li"><button class="Carrousel-point"></button></li>
+                    <li class="Carrousel-li"><button class="Carrousel-point"></button></li>
+                    <li class="Carrousel-li"><button class="Carrousel-point"></button></li>
+                </ul>
+            </div>
+
+
+            <p class="Parrafo-p">Sobre la ausente sección de vientos hubo un comentario desde la promotora para aclarar una cosa fundamental. DeWolff sí que han actuado con sección de vientos y coros en su Holanda natal, donde seguramente la logística y los costes no se disparen, a diferencia de traerlos en una gira por toda Europa. Sinceramente, no hizo falta más despliegue material que el de la guitarra, la voz, la batería y el pedazo de piano que remataba la colorida escenografía. Como curiosidad, la ausencia de bajo no supuso un problema.</p>
+            <p class="Parrafo-p">También fue todo un alborozo escuchar auténticos clásicos de sus más recientes trabajos. Desde ‘Yes You Do’ del disco <b><i>Wolffpack</i></b> (Mascot Records, 2021), ‘Double Crossing Man’ de <b><i>Thrust</i></b> (Mascot Records, 2018) o ‘Tired Of Loving you’ de <b><i>Roux-Ga-Roux</i></b> (Electrosaurus Records, 2015). Las partes instrumentales tuvieron un protagonismo absoluto, sin resultar cansino ni recrearse en exceso. El equilibrio justo entre mostrar el virtuosismo y no pecar de cargante. Pavlo, cantante y guitarra del grupo, comentaba brevemente lo abrumador del asunto desde su última visita a la capital, concretamente a la sala El Sol, y el salto dado a nivel de congregación. El lujo de verles en una sala con escenario a ras de suelo no parece que vaya a repetirse, porque podrían llenar una Riviera con holgura si el promotor se lo propone.</p>
+            <p class="Parrafo-p">La noche concluyó con ‘Message For My Baby’ y con ‘Rosita’. En palabras de los holandeses es “una canción muy especial que lo mismo dura 15, 20 o 25 minutos, depende”. En la preventa del vinilo metieron un trocito de la cinta que contenía el máster primigenio de esta monumental culminación de cuarto de hora. Y no es para menos, porque solo la mezcla les tuvo sentados muchas horas antes de cortar y unir las cintas (recordemos, grabaron todo con material analógico en su mayoría). Once músicos participaron en las sesiones de grabación, la consideran una de sus piezas más ambiciosas hasta la fecha: en un tema de quince minutos juntaron lo que podrían haber sido prácticamente ocho canciones por separado.</p>
+            <p class="Parrafo-p">Próxima estación: otro concierto de DeWolff y The Grand East, por favor.</p>
+
+        </div>
+
+        <section class="Main-lecturas Lecturas">
+            <h2 class="Lecturas-seccion">Otras lecturas</h2>
+            <div class="Lecturas-grid">
+                <div class="Lecturas-noticia">
+                    <picture class="Lecturas-picture">
+                        <img class="Lecturas-img" src="https://radioyrockmg.wordpress.com/wp-content/uploads/2023/12/bl_1-1.png?w=1200" alt="Xoel López">
+                    </picture>
+                    <h3 class="Titular-h3"><a href="noticia-conciertos.html">Ascensión al ochomil con Xoel López y compañía</a></h3>
+                </div>
+                <div class="Lecturas-noticia">
+                    <picture class="Lecturas-picture">
+                        <img class="Lecturas-img" src="https://radioyrockmg.wordpress.com/wp-content/uploads/2023/04/img_5645.png" alt="Rufus T Firefly">
+                    </picture>
+                    <h3 class="Titular-h3"><a href="noticia-conciertos.html">Rufus T. Firefly y el anochecer de plata</a></h3>
+                </div>
+                <div class="Lecturas-noticia">
+                    <picture class="Lecturas-picture">
+                        <img class="Lecturas-img" src="https://radioyrockmg.wordpress.com/wp-content/uploads/2023/10/bl_zigars.png" alt="Los Zigarros">
+                    </picture>
+                    <h3 class="Titular-h3"><a href="noticia-conciertos.html">Rock rápido con Los Zigarros en Madrid
+                    </a></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="Footer">
+        <div class="Footer-hero">
+            <div class="Footer-separador">
+                <picture class="Footer-logo">
+                    <img src="assets/logo.png" alt="">
+                </picture>
+                <h4 class="Text-h4">Actualidad a ritmo de riff</h4>
+            </div>
+            <ul class="Footer-redes">
+                <li class="Redes-li">
+                    <a href="https://www.instagram.com/radioyrock/" class="Redes-a" target="_blank" rel="noopener noreferrer">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                    </a>
+                </li>
+                <li class="Redes-li">
+                    <a href="mailto:radioyrock.gmc@gmail.com" class="Redes-a" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="Redes-li">
+                    <a href="https://open.spotify.com/user/r953s5d3l5vtt7dio5edq7sb3?si=b8666b39d0f14eab" class="Redes-a" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="Footer-privacy">
+                <li class="Footer-cookies">Política de privacidad</li>
+                <li class="Footer-cookies">Política de cookies</li>
+                <li class="Footer-cookies">Publicidad</li>
+                <li class="Footer-cookies">Contacto</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
