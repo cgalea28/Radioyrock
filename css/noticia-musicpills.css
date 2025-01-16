@@ -44,20 +44,6 @@ svg{
    --c-black-titles:#0A0A0A;
    --c-black-body:#121212;
    --c-grey:#ABB8C3;
-
-   /*DEGRADADOS FONDO*/
-   /*DEGRADADO 1 QUE ME GUSTA PARA LA HOME
-    background: linear-gradient(to top, #D91218, #6D090C);
-    background-image: url('ruta/a/una-textura-suave.png'), linear-gradient(to top, #D91218, #6D090C);*/
-    
-    /**DEGRADADO 2 QUE ME GUSTA PARA LA HOME
-    background: linear-gradient(to right, #D91218 20%, #E03D42 50%, #6D090C 80%);
-    background: linear-gradient(to bottom, #6D090C, #E03D42, #D91218);
-    background-image: url('ruta/a/una-textura-de-ruido.png'), linear-gradient(to bottom, #6D090C, #E03D42, #D91218);
-    background-size: cover;
-    background-blend-mode: soft-light;
-    background-color: rgba(0, 0, 0, 0.05);  Ruido suave con opacidad baja */
-    
 }
 body{
     hyphens: auto;
@@ -148,7 +134,7 @@ form , input , textarea , label , select , button{
 }
 .Redes-li{
     width: 45px;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     color:#FFFFFF;
     border-radius: 50%;
 
@@ -162,7 +148,7 @@ form , input , textarea , label , select , button{
 }
 .Redes-li:hover,
 .Redes-li:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Redes-a{
     padding:11px;
@@ -174,7 +160,7 @@ form , input , textarea , label , select , button{
 }
 .Header-btn{
     width: 10%;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     border-radius: 3px;
 
     margin:10px;
@@ -192,7 +178,7 @@ form , input , textarea , label , select , button{
 }
 .Header-btn:hover,
 .Header-btn:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Lightbox{
     width: 100%;
@@ -401,7 +387,7 @@ input:not(:focus):invalid{
 .Buscar-bar button{
     width: 35px;
     height: 35px;
-    background:var(--c-red-second);
+    background:var(--c-red-primary);
     border-radius: 50%;
 
     margin:auto;
@@ -418,7 +404,7 @@ input:not(:focus):invalid{
 }
 .Buscar-bar button:hover,
 .Buscar-bar button:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Buscar-bar button svg{
     width: 18px;
@@ -439,7 +425,7 @@ input:not(:focus):invalid{
 .Titulo-seccion{
     margin-top:10px;
     padding:10px;
-    font-size: var(--fs-three);
+    font-size: var( --fs-section-titles);
 }
 .Titulo-titulares{
     margin:2px;
@@ -471,19 +457,14 @@ input:not(:focus):invalid{
 
 .Foto{
     width: 65%;    
-    background-color: azure;
     margin:auto;
-    margin-bottom: 20px;
 }
 .Foto-picture{
     max-height: 45vh;
     width: 90%;
-    background-color: darkblue;
 
 }
 .Foto-img{
-    /* min-height: 600px; */
-    background-color: darkblue;
     object-fit: cover;
 }
 .Texto{
@@ -517,7 +498,7 @@ input:not(:focus):invalid{
     padding:10px;
 
     font-family:'Playfair Display';
-    font-size: var(--fs-two);
+    font-size: var(--fs-section-titles);
     font-weight: 600;
 
 }
@@ -549,12 +530,11 @@ input:not(:focus):invalid{
 
 .Footer{
     width: 100%;
-    background-color: grey;
+    background-color:var(--c-grey);
 }
 .Footer-hero{
     width: 70%;
     max-width: 600px;
-    /*background-color: darkturquoise;*/
     margin:auto;
 
     display:flex;
@@ -567,7 +547,6 @@ input:not(:focus):invalid{
     margin:auto;
     margin-top:10px;
 
-
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -578,8 +557,10 @@ input:not(:focus):invalid{
     min-height:50px;
 }
 .Text-h4{
+    font-family: 'DM Sans';
+    letter-spacing: .4px;
     text-align: center;
-    color:white;
+    color:var(--c-black-body);
 }
 .Footer-redes{
     width: 60%;
@@ -604,7 +585,7 @@ input:not(:focus):invalid{
     gap:20px;
 
     font-size:12px;
-    color:var(--c-white);
+    color:var(--c-black-body);
 }
 .Footer-cookies{
     /*background-color: lightblue;*/
@@ -659,16 +640,11 @@ input:not(:focus):invalid{
     .Lecturas-grid{
         width: 100%;
         padding:5px;
-        grid: auto-flow 280px / repeat(3 , 1fr);
-        column-gap: 15px; 
-        row-gap: 15px; 
     }
     .Titular-h3{
         font-size: clamp(18px , 8vw , 20px);
     }
-    .Parrafo-p{
-        font-size:clamp(16px , 8vw , 18px);
-    }
+
     .Footer-seccion{
         font-size: clamp(12px , 8vw , 14px);
     }
@@ -727,14 +703,10 @@ input:not(:focus):invalid{
     .Text-h4{
         font-size: clamp(16px , 6vw , 18px);
     }
-    .Parrafo-p{
-        width:90%;
-        font-size:clamp(18px , 7vw , 20px);
-    }
     .Lecturas-grid{
         width: 100%;
         padding:5px;
-        grid: auto-flow 290px / repeat(2 , 1fr);
+        grid: auto-flow 270px / repeat(2 , 1fr);
         column-gap: 15px; 
         row-gap: 15px; 
     }
@@ -773,9 +745,6 @@ input:not(:focus):invalid{
         width: 100%;
         flex-flow:row wrap;
     }
-    .Parrafo-p{
-        font-size:clamp(16px , 8vw , 18px);
-    }
     .Texto{
         width: 90%;
         margin:auto;
@@ -804,13 +773,10 @@ input:not(:focus):invalid{
         font-size: clamp(12px , 8vw , 14px);
     }
     .Titular-h3{
-        font-size: clamp(18px , 8vw , 22px);
+        font-size: clamp(20px , 8vw , 22px);
     }
     .Text-h4{
         font-size: clamp(16px , 6vw , 18px);
-    }
-    .Parrafo-p{
-        font-size:clamp(18px , 7vw , 20px);
     }
 }
 @font-face {

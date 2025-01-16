@@ -46,7 +46,7 @@ next.addEventListener(`click`, () => {
     punto[foto].classList.add(`isActive`)
 })
 
-//Botón atrás
+//Botón Prev
 prev.addEventListener(`click`, () => {
     if (foto <= 0) {
         foto = carrouselImgs.length
@@ -78,18 +78,23 @@ punto.forEach((_, i) => {
     })
 })
 
-// carrouselImgs.forEach((_, i) => {
-//     carrouselImgs[i].addEventListener(`click`, () => {
-//         foto = i
-//         punto[i].classList.add(`isActive`)
-//     })
-// })
-
-
 //AÑADIR la clase isActive al punto que hemos hecho click
+punto.forEach(( _ , i )=>{
+    punto[i].addEventListener( `click` , ()=>{
 
+          foto = i
+          carrouselImgs.forEach(( _ , i )=>{
+            carrouselImgs[i].classList.remove(`isVisible`)
+        })
+        carrouselImgs[foto].classList.add(`isVisible`)
+        
+        punto.forEach(( _ , i )=>{
+            punto[i].classList.remove(`isActive`)
+        })
+        punto[foto].classList.add(`isActive`)
 
-
+    })
+})
 
 //Lightbox con suscripción a Newsletter R&R
 const BtnList = document.querySelectorAll(`.Header-btn`)
@@ -111,3 +116,60 @@ BtnList.forEach( ( eachBtn , index )=>{
 })
 
 lightboxCerrar.addEventListener(`pointerdown` ,  closeBtnHandler )
+
+//Load more cuando CLICK .Music-button
+var wraper = document.querySelectorAll('.Music-grid');
+var musicBtn = document.querySelector('.Music-button');
+var currentImg = 1;
+
+musicBtn.addEventListener('click', function() {
+    for (var i = currentImg; i < currentImg + 1; i++) {
+        if (wraper[i]) {
+            wraper[i].style.display = 'grid';
+        }
+    }
+    currentImg +=1
+    if (currentImg>=wraper.length){
+        musicBtn.style.display =`none` 
+    }
+})
+
+//Efecto de scroll con InterjectionObserver
+const MusicNoticia = document.querySelectorAll(`.Music-noticia`)
+console.log(MusicNoticia)
+
+let options = {
+    threshold : [0,1]
+}
+
+let observer = new IntersectionObserver( (entries)=>{
+    entries.forEach(( entry )=>{
+        let { isIntersecting , target } = entry
+
+        if( isIntersecting ){
+            target.classList.add(`IsVisible`)
+        }
+        // else{
+        //     target.classList.remove(`IsVisible`)
+        // }
+    })
+
+} , options )
+
+MusicNoticia.forEach(( _ , i )=>{
+    observer.observe(MusicNoticia[i])
+})
+
+window.addEventListener('scroll', () => {
+    let { scrollY, innerHeight } = window;
+    let { offsetTop } = MusicNoticia;
+
+    let puntoActivacion = scrollY >= (offsetTop - (innerHeight / 1.3));
+    let operacion = scrollY - (offsetTop - (innerHeight / 1.3));
+
+    requestAnimationFrame(() => {
+        if (puntoActivacion) {
+            MusicNoticia.style.transform = `translateY(${operacion / 2}px)`;
+        }
+    });
+});

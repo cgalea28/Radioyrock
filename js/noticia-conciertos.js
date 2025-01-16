@@ -45,7 +45,7 @@ next.addEventListener(`click`, () => {
     punto[foto].classList.add(`isActive`)
 })
 
-//Botón atrás
+//Botón Prev
 prev.addEventListener(`click`, () => {
     if (foto <= 0) {
         foto = carrouselImgs.length
@@ -71,22 +71,29 @@ prev.addEventListener(`click`, () => {
 punto.forEach((_, i) => {
     punto[i].addEventListener(`click`, () => {
         let posicion = i
-        let operacion = posicion * -33.33
+        let operacion = posicion * -25
 
         carrouselContainer.style.transform = `translateX(${operacion}%)`
     })
 })
 
-// carrouselImgs.forEach((_, i) => {
-//     carrouselImgs[i].addEventListener(`click`, () => {
-//         foto = i
-//         punto[i].classList.add(`isActive`)
-//     })
-// })
-
-
 //AÑADIR la clase isActive al punto que hemos hecho click
+punto.forEach(( _ , i )=>{
+    punto[i].addEventListener( `click` , ()=>{
 
+          foto = i
+          carrouselImgs.forEach(( _ , i )=>{
+            carrouselImgs[i].classList.remove(`isVisible`)
+        })
+        carrouselImgs[foto].classList.add(`isVisible`)
+        
+        punto.forEach(( _ , i )=>{
+            punto[i].classList.remove(`isActive`)
+        })
+        punto[foto].classList.add(`isActive`)
+
+    })
+})
 
 //Lightbox con suscripción a Newsletter R&R
 const BtnList = document.querySelectorAll(`.Header-btn`)

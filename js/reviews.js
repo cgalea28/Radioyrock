@@ -28,3 +28,58 @@ BtnList.forEach( ( eachImg , index )=>{
 })
 
 lightboxCerrar.addEventListener(`pointerdown` ,  closeBtnHandler )
+
+//Load more cuando CLICK .Reviews-button
+var wraper = document.querySelectorAll('.Reviews-grid');
+var musicBtn = document.querySelector('.Reviews-button');
+var currentImg = 1;
+
+musicBtn.addEventListener('click', function() {
+    for (var i = currentImg; i < currentImg + 1; i++) {
+        if (wraper[i]) {
+            wraper[i].style.display = 'grid';
+        }
+    }
+    currentImg +=1
+    if (currentImg>=wraper.length){
+        musicBtn.style.display =`none` 
+    }
+})
+
+//Efecto de scroll con InterjectionObserver
+const MusicNoticia = document.querySelectorAll(`.Reviews-noticia`)
+console.log(MusicNoticia)
+
+let options = {
+    threshold : [0,1]
+}
+
+let observer = new IntersectionObserver( (entries)=>{
+    entries.forEach(( entry )=>{
+        let { isIntersecting , target } = entry
+
+        if( isIntersecting ){
+            target.classList.add(`IsVisible`)
+        }
+    })
+
+} , options )
+
+MusicNoticia.forEach(( _ , i )=>{
+    observer.observe(MusicNoticia[i])
+})
+
+window.addEventListener('scroll', () => {
+    let { scrollY, innerHeight } = window;
+    let { offsetTop } = MusicNoticia;
+
+    let puntoActivacion = scrollY >= (offsetTop - (innerHeight / 1.3));
+    let operacion = scrollY - (offsetTop - (innerHeight / 1.3));
+
+    requestAnimationFrame(() => {
+        if (puntoActivacion) {
+            MusicNoticia.style.transform = `translateY(${operacion / 2}px)`;
+        }
+    });
+});
+

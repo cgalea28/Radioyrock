@@ -92,7 +92,7 @@ form , input , textarea , label , select , button{
 }
 .Redes-li{
     width: 50px;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     color:#FFFFFF;
     border-radius: 50%;
 
@@ -106,7 +106,7 @@ form , input , textarea , label , select , button{
 }
 .Redes-li:hover,
 .Redes-li:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Redes-a{
     padding:13px;
@@ -117,7 +117,7 @@ form , input , textarea , label , select , button{
 }
 .Header-btn{
     width: 10%;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     border-radius: 3px;
 
     margin:10px;
@@ -140,7 +140,7 @@ form , input , textarea , label , select , button{
 }
 .Header-btn:hover,
 .Header-btn:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Lightbox{
     width: 100%;
@@ -329,7 +329,6 @@ input:not(:focus):invalid{
 .Footer{
     width: 100%;
     min-height: 20vh;
-    /* background-color:#6D090C; */
     background: transparent;
 }
 .Footer-hero{
@@ -360,6 +359,7 @@ input:not(:focus):invalid{
     min-height:50px;
 }
 .Text-h4{
+    font-family: 'DM Sans';
     font-size: 20px;
     letter-spacing: .5px;
     color:white;
@@ -393,7 +393,7 @@ input:not(:focus):invalid{
 }
 .Footer-li:hover,
 .Footer-li:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Footer-privacy{
     margin:auto;
@@ -408,7 +408,6 @@ input:not(:focus):invalid{
     color:var(--c-white);
 }
 .Footer-cookies{
-    /*background-color: lightblue;*/
     margin:auto;
     padding:5px;
 

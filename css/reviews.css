@@ -70,7 +70,7 @@ form , input , textarea , label , select , button{
     margin-bottom:15px;
     padding:10px;
 
-    font-size:var(--fs-section-titles);
+    font-size:var(--fs-one);
     text-align:center;
 }
 .Titular-h3{
@@ -135,7 +135,7 @@ form , input , textarea , label , select , button{
 }
 .Redes-li{
     width: 45px;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     color:#FFFFFF;
     border-radius: 50%;
 
@@ -149,7 +149,7 @@ form , input , textarea , label , select , button{
 }
 .Redes-li:hover,
 .Redes-li:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Redes-a{
     padding:11px;
@@ -161,7 +161,7 @@ form , input , textarea , label , select , button{
 }
 .Header-btn{
     width: 10%;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     border-radius: 3px;
 
     margin:10px;
@@ -179,7 +179,7 @@ form , input , textarea , label , select , button{
 }
 .Header-btn:hover,
 .Header-btn:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Lightbox{
     width: 100%;
@@ -388,7 +388,7 @@ input:not(:focus):invalid{
 .Buscar-bar button{
     width: 35px;
     height: 35px;
-    background:var(--c-red-second);
+    background:var(--c-red-primary);
     border-radius: 50%;
 
     margin:auto;
@@ -405,7 +405,7 @@ input:not(:focus):invalid{
 }
 .Buscar-bar button:hover,
 .Buscar-bar button:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
 .Buscar-bar button svg{
     width: 18px;
@@ -459,8 +459,8 @@ input:not(:focus):invalid{
 
 }
 .Portada-h4{
-    width:11rem;
-    background-color: var(--c-red-second);
+    max-width:170px;
+    background-color: var(--c-red-primary);
     border-radius: 3px;
     margin-bottom:8px;
     padding: 12px;
@@ -472,15 +472,21 @@ input:not(:focus):invalid{
     width: 100%;
     min-height: 540px;
 
-    margin:15px auto;
+    margin:25px auto;
 }
 .Reviews-grid{
     width: 85%;
     min-height: 300px;
-    margin:auto;
+    margin:10px auto;
+
     display:grid;
     grid-template-columns:repeat( 4 , 1fr);
     column-gap: 10px;
+
+    display:none;
+}
+.Reviews-grid:nth-child(2){
+    display:grid;
 }
 .Reviews-noticia{
     width: 100%;
@@ -490,6 +496,16 @@ input:not(:focus):invalid{
     box-shadow: inset 0px 0px 7px -2px rgba(18,18,18,0.45);
     
     padding:15px;
+
+    opacity: 0.3;
+    filter:blur(6px);
+    transform: translateY(15%);
+    transition: all .5s ease-in;
+}
+.IsVisible{
+    opacity: 1;
+    filter:blur(0px);
+    transform: translateY(0%);
 }
 .Reviews-picture{
     width:100%;
@@ -505,7 +521,7 @@ input:not(:focus):invalid{
 }
 .Reviews-button{
     max-width:150px;
-    background-color:var(--c-red-second);
+    background-color:var(--c-red-primary);
     border-radius: 5px;
 
     margin:auto;
@@ -532,18 +548,23 @@ input:not(:focus):invalid{
 }
 .Reviews-button:hover,
 .Reviews-button:focus-visible{
-    background:var(--c-red-primary);
+    background:var(--c-red-second);
 }
-/*.Banner{
-    width: 100%;
-    min-height: 30vh;
-    background-color: lavender;
-    margin:20px auto;
-}*/
-
+.Text-h4{
+    font-family: 'DM Sans';
+    letter-spacing: .4px;
+    text-align: center;
+    color:var(--c-white);
+}
+.Footer-h4{
+    font-family: 'DM Sans';
+    letter-spacing: .4px;
+    text-align: center;
+    color:var(--c-black-body);
+}
 .Footer{
     width: 100%;
-    background-color: grey;
+    background-color:var(--c-grey);
 }
 .Footer-hero{
     width: 70%;
@@ -570,12 +591,6 @@ input:not(:focus):invalid{
 .Footer-title{
     width: 50%;
     min-height:50px;
-}
-.Text-h4{
-    font-family: 'DM Sans';
-    letter-spacing: .4px;
-    text-align: center;
-    color:white;
 }
 .Footer-redes{
     width: 60%;
@@ -609,6 +624,7 @@ input:not(:focus):invalid{
 
     font-size:14px;
     text-align: center;
+    color:var(--c-black-body);
 }
 
 @media screen and (max-width:930px){
@@ -807,7 +823,9 @@ input:not(:focus):invalid{
         column-gap: 15px; 
         row-gap: 15px; 
     }
-
+    .Reviews-button{
+        max-width: 190px;
+    }
     .Footer-hero{
         width: 90%;
     }
