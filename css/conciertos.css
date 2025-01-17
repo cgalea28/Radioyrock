@@ -126,7 +126,7 @@ button {
 .Parrafo-p {
   margin-bottom: 0.25rem;
   font-family: "Playfair Display";
-  font-size: 1rem;
+  font-size:var(--fs-three);
   font-weight: 400;
   color: var(--c-black-body);
 }
@@ -314,7 +314,7 @@ button {
   background-color: var(--c-white);
 
   font: inherit;
-  font-size: 1rem;
+  font-size:var(--fs-three);
   font-weight: normal;
 }
 .Form-group input::placeholder {
@@ -403,7 +403,7 @@ input:not(:focus):invalid {
   background: transparent;
   outline: none;
 
-  font-size: 0.875rem;
+  font-size:var(--fs-four);
   color: var(--c-black-titles);
 }
 ::placeholder {
@@ -671,7 +671,7 @@ input:not(:focus):invalid {
   margin: auto;
   padding: 0.3125rem;
 
-  font-size: 0.875rem;
+  font-size:var(--fs-four);
   text-align: center;
   color: var(--c-black-body);
 }
@@ -722,7 +722,7 @@ input:not(:focus):invalid {
     margin: 0;
     width: 100%;
     bottom: calc(50% - 11.5rem);
-    font-size: 1.25rem;
+    font-size:var(--fs-two);
   }
   .Music-grid {
     width: 90%;
@@ -738,10 +738,10 @@ input:not(:focus):invalid {
     font-size: clamp(0.9375rem, 8vw, 1rem);
   }
   .Footer-seccion {
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
   .Footer-cookies {
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
 }
 @media screen and (max-width: 760px) {
@@ -813,10 +813,10 @@ input:not(:focus):invalid {
     gap: 2px;
   }
   .Titular-h3 {
-    font-size: clamp(1.25rem, 8vw, 1.5625rem);
+    font-size: clamp(var(--fs-two), 8vw, 1.5625rem);
   }
   .Parrafo-p {
-    font-size: clamp(1rem, 8vw, 1.125rem);
+    font-size: clamp(var(--fs-three), 8vw, 1.125rem);
   }
 }
 @media (max-width: 460px) {
@@ -888,7 +888,7 @@ input:not(:focus):invalid {
     padding: 1px;
     width: 100%;
     bottom: calc(50% - 5rem);
-    font-size: 0.875rem;
+    font-size:var(--fs-four);
   }
   .Music-grid {
     width: 90%;
@@ -910,7 +910,7 @@ input:not(:focus):invalid {
   }
   .Footer-cookies {
     width: 100%;
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
   .Titular-h3 {
     font-size: clamp(1.125rem, 8vw, 1.375rem);

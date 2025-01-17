@@ -227,7 +227,7 @@ button {
 }
 .Lightbox.Active {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events:visible;
 }
 .Lightbox-cerrar {
   width: 3.5rem;
@@ -312,7 +312,7 @@ button {
   background-color: var(--c-white);
 
   font: inherit;
-  font-size: 1rem;
+  font-size: var(--fs-three);
   font-weight: normal;
 }
 .Form-group input::placeholder {
@@ -397,7 +397,7 @@ input:not(:focus):invalid {
   background: transparent;
   outline: none;
 
-  font-size: 0.875rem;
+  font-size:var(--fs-four);
   color: var(--c-black-titles);
 }
 ::placeholder {
@@ -451,15 +451,7 @@ input:not(:focus):invalid {
   text-align: center;
 }
 .Titulo-titular {
-  font-size: 2.5rem;
-}
-.Titulo-sub {
-  margin: auto;
-  margin-bottom: 0.3125rem;
-  padding: 0.5rem;
-
-  font-size: 1.5625rem;
-  font-weight: 500;
+  font-size: var(--fs-one);
 }
 .Titulo-entradilla {
   width: 80%;
@@ -603,7 +595,7 @@ input:not(:focus):invalid {
   margin: auto;
   padding: 0.3125rem;
 
-  font-size: 0.875rem;
+  font-size: var(--fs-four);
   text-align: center;
 }
 @media screen and (max-width: 930px) {
@@ -652,16 +644,16 @@ input:not(:focus):invalid {
     padding: 0.3125rem;
   }
   .Titular-h3 {
-    font-size: clamp(1.125rem, 8vw, 1.25rem);
+    font-size: clamp(1.125rem, 8vw, var(--fs-two));
   }
   .Parrafo-p {
-    font-size: clamp(1rem, 8vw, 1.125rem);
+    font-size: clamp(var(--fs-three), 8vw, 1.125rem);
   }
   .Footer-seccion {
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
   .Footer-cookies {
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
 }
 @media screen and (max-width: 760px) {
@@ -713,10 +705,10 @@ input:not(:focus):invalid {
     width: 90%;
   }
   .Titular-h3 {
-    font-size: clamp(1.25rem, 8vw, 1.375rem);
+    font-size: clamp(var(--fs-two), 8vw, 1.375rem);
   }
   .Text-h4 {
-    font-size: clamp(1rem, 6vw, 1.125rem);
+    font-size: clamp(var(--fs-three), 6vw, 1.125rem);
   }
   .Parrafo-p {
     width: 90%;
@@ -790,16 +782,16 @@ input:not(:focus):invalid {
   }
   .Footer-cookies {
     width: 100%;
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
   .Titular-h3 {
-    font-size: clamp(1.25rem, 8vw, 1.375rem);
+    font-size: clamp(var(--fs-two), 8vw, 1.375rem);
   }
   .Text-h4 {
-    font-size: clamp(1rem, 6vw, 1.125rem);
+    font-size: clamp(var(--fs-three), 6vw, 1.125rem);
   }
   .Parrafo-p {
-    font-size: clamp(1.125rem, 7vw, 1.25rem);
+    font-size: clamp(1.125rem, 7vw, var(--fs-two));
   }
 }
 @font-face {

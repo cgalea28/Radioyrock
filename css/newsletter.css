@@ -3,8 +3,6 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  vertical-align: baseline;
 }
 html {
   scroll-behavior: smooth;
@@ -121,7 +119,7 @@ button {
 .Parrafo-p {
   margin-bottom: 0.25rem;
   font-family: "Playfair Display";
-  font-size: 1rem;
+  font-size: var(--fs-three);
   font-weight: 400;
   color: var(--c-black-body);
 }
@@ -226,7 +224,7 @@ button {
 }
 .Lightbox.Active {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: visible;
 }
 .Lightbox-cerrar {
   width: 3.5rem;
@@ -312,7 +310,7 @@ button {
   padding: 1rem;
 
   font: inherit;
-  font-size: 1rem;
+  font-size: var(--fs-three);
   font-weight: normal;
 }
 .Form-group input::placeholder {
@@ -396,7 +394,7 @@ input:not(:focus):invalid {
   background: transparent;
   outline: none;
 
-  font-size: 0.875rem;
+  font-size:var(--fs-four);
   color: var(--c-black-titles);
 }
 ::placeholder {
@@ -517,7 +515,7 @@ input:not(:focus):invalid {
   margin: auto;
   padding: 0.3125rem;
 
-  font-size: 0.875rem;
+  font-size:var(--fs-four);
   font-family: "DM Sans";
   text-align: center;
 }
@@ -546,16 +544,16 @@ input:not(:focus):invalid {
     width: 50%;
   }
   .Titular-h3 {
-    font-size: clamp(1.125rem, 8vw, 1.25rem);
+    font-size: clamp(1.125rem, 8vw, var(--fs-two));
   }
   .Parrafo-p {
-    font-size: clamp(0.9375rem, 8vw, 1rem);
+    font-size: clamp(0.9375rem, 8vw, var(--fs-three));
   }
   .Footer-seccion {
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
   .Footer-cookies {
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
 }
 @media screen and (max-width: 760px) {
@@ -644,16 +642,16 @@ input:not(:focus):invalid {
   }
   .Footer-cookies {
     width: 100%;
-    font-size: clamp(0.75rem, 8vw, 0.875rem);
+    font-size: clamp(0.75rem, 8vw, var(--fs-four));
   }
   .Titular-h3 {
     font-size: clamp(1.125rem, 8vw, 1.375rem);
   }
   .Text-h4 {
-    font-size: clamp(1rem, 6vw, 1.125rem);
+    font-size: clamp(var(--fs-three), 6vw, 1.125rem);
   }
   .Parrafo-p {
-    font-size: clamp(1rem, 7vw, 1.125rem);
+    font-size: clamp(var(--fs-three), 7vw, 1.125rem);
   }
 }
 @font-face {

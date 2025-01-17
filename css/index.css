@@ -183,7 +183,7 @@ button {
 }
 .Lightbox.Active {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events:visible;
 }
 .Lightbox-cerrar {
   width: 3.5rem;
@@ -268,7 +268,7 @@ button {
   background-color: var(--c-white);
 
   font: inherit;
-  font-size: 1rem;
+  font-size:var(--fs-three);
   font-weight: normal;
 }
 .Form-group input::placeholder {
@@ -368,7 +368,7 @@ input:not(:focus):invalid {
 }
 .Text-h4 {
   font-family: "DM Sans";
-  font-size: 1.25rem;
+  font-size:var(--fs-two);
   letter-spacing: 0.5px;
   color: var(--c-white);
 }
@@ -419,7 +419,7 @@ input:not(:focus):invalid {
   margin: auto;
   padding: 0.3125rem;
 
-  font-size: 0.875rem;
+  font-size:var(--fs-four);
   text-align: center;
 }
 
