@@ -33,7 +33,7 @@ var wraper = document.querySelectorAll(".Music-grid");
 var musicBtn = document.querySelector(".Music-button");
 var currentImg = 1;
 
-musicBtn.addEventListener("click", function () {
+musicBtn.addEventListener("click", ()=>{
   for (var i = currentImg; i < currentImg + 1; i++) {
     if (wraper[i]) {
       wraper[i].style.display = "grid";

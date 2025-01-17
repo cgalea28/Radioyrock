@@ -25,6 +25,9 @@ video {
   width: 100%;
   height: inherit;
 }
+img{
+  aspect-ratio:auto;
+}
 svg {
   fill: currentColor;
 }
