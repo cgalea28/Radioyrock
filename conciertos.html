@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="Lightbox">
-        <button class="Lightbox-cerrar">
+        <button class="Lightbox-cerrar" aria-label="Botón para cerrar">
             <svg class="Lightbox-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
             </svg>
@@ -36,7 +36,7 @@
                     <span class="Error">Email requerido</span>
                     <input type="email" id="email" placeholder="email@email.com" autocomplete="off">   
                 </div>
-                <input class="Form-button" disabled type="submit" value="Suscríbete a Radio&Rock">
+                <input class="Form-button" disabled type="submit" value="Suscríbete a Radio&Rock" aria-label="Suscríbete a Radio & Rock">
             </form>
 
         </div>
@@ -151,14 +151,14 @@
             <div class="Header-lupa">
                 <form action="#" class="Buscar-bar">
                     <input type="text" placeholder="  Busca aquí" name="Q" autocomplete="off">
-                    <button type="submit">
+                    <button type="submit" aria-label="Buscar">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                         </svg>
                     </button>
                 </form>
             </div>
-            <button class="Header-button">
+            <button class="Header-button" aria-label="Menú">
                 <svg class="Header-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title/><path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/><path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></svg>
             </button>
             <nav class="Header-nav IsActive">
@@ -194,13 +194,13 @@
                         </div>
                     </div>
                 
-                    <button class="Carrousel-arrow Next">
+                    <button class="Carrousel-arrow Next" aria-label="Flecha siguiente">
                         <svg xmlns="http://www.w3.org/2000/svg" class="Carrousel-svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
                             <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
                           </svg>
                     </button>
-                    <button class="Carrousel-arrow Prev">
+                    <button class="Carrousel-arrow Prev" aria-label="Flecha anterior">
                         <svg xmlns="http://www.w3.org/2000/svg" class="Carrousel-svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                             <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
@@ -208,9 +208,9 @@
                     </button>
                 
                     <ul class="Carrousel-ul">
-                        <li class="Carrousel-li"><button class="Carrousel-point isActive"></button></li>
-                        <li class="Carrousel-li"><button class="Carrousel-point"></button></li>
-                        <li class="Carrousel-li"><button class="Carrousel-point"></button></li>
+                        <li class="Carrousel-li"><button class="Carrousel-point isActive" aria-label="botón carrusel"></button></li>
+                        <li class="Carrousel-li"><button class="Carrousel-point" aria-label="botón carrusel"></button></li>
+                        <li class="Carrousel-li"><button class="Carrousel-point" aria-label="botón carrusel"></button></li>
                     </ul>
                 </div>
             </div>
@@ -306,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <a class="Music-button">
+            <a class="Music-button" aria-label="botón Cargar mas contenido">
                 <h4 class="Text-h4">Ver más</h4>
                 <div class="Music-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
