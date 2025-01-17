@@ -1,175 +1,165 @@
-'use strict'
+"use strict";
 
 //Cuando hago CLICK en .Button, .Nav TOGGLE de .isActive
-const button = document.querySelector(`.Header-button`)
-const nav = document.querySelector(`.Header-nav`)
+const button = document.querySelector(`.Header-button`);
+const nav = document.querySelector(`.Header-nav`);
 
-button.addEventListener(`click` , ()=>{
-    nav.classList.toggle(`IsActive`)
-})
+button.addEventListener(`click`, () => {
+  nav.classList.toggle(`IsActive`);
+});
 
-let foto = 0
-
+let foto = 0;
 
 //Cuando click en .Next
 //foto++
 //.Carrousel-container le STYLE transform: translateX()
 
-const next = document.querySelector(`.Next`)
-const prev = document.querySelector(`.Prev`)
-const carrouselContainer = document.querySelector(`.Carrousel-container`)
-const carrouselImgs = document.querySelectorAll(`.Carrousel-cont`)
-const punto = document.querySelectorAll(`.Carrousel-point`)
-const isActive = document.querySelector(`.isActive`)
+const next = document.querySelector(`.Next`);
+const prev = document.querySelector(`.Prev`);
+const carrouselContainer = document.querySelector(`.Carrousel-container`);
+const carrouselImgs = document.querySelectorAll(`.Carrousel-cont`);
+const punto = document.querySelectorAll(`.Carrousel-point`);
+const isActive = document.querySelector(`.isActive`);
 
-let anchoImg = 100 / carrouselImgs.length
+let anchoImg = 100 / carrouselImgs.length;
 
-carrouselContainer.style.width = `calc(100% * ${carrouselImgs.length})`
-carrouselContainer.style.gridTemplateColumns = `repeat(${carrouselImgs.length} , 1fr)`
+carrouselContainer.style.width = `calc(100% * ${carrouselImgs.length})`;
+carrouselContainer.style.gridTemplateColumns = `repeat(${carrouselImgs.length} , 1fr)`;
 
 //Punto Next
 next.addEventListener(`click`, () => {
-    foto++
-    if (foto >= carrouselImgs.length) {
-        foto = 0
-    }
+  foto++;
+  if (foto >= carrouselImgs.length) {
+    foto = 0;
+  }
 
-    carrouselContainer.style.transform = `translateX(-${anchoImg * foto}%)`
+  carrouselContainer.style.transform = `translateX(-${anchoImg * foto}%)`;
 
-    carrouselImgs.forEach((_, i) => {
-        carrouselImgs[i].classList.remove(`isVisible`)
-    })
-    carrouselImgs[foto].classList.add(`isVisible`)
-    punto.forEach((_, i) => {
-        punto[i].classList.remove(`isActive`)
-    })
-    punto[foto].classList.add(`isActive`)
-})
+  carrouselImgs.forEach((_, i) => {
+    carrouselImgs[i].classList.remove(`isVisible`);
+  });
+  carrouselImgs[foto].classList.add(`isVisible`);
+  punto.forEach((_, i) => {
+    punto[i].classList.remove(`isActive`);
+  });
+  punto[foto].classList.add(`isActive`);
+});
 
 //Botón Prev
 prev.addEventListener(`click`, () => {
-    if (foto <= 0) {
-        foto = carrouselImgs.length
-    }
-    foto--
+  if (foto <= 0) {
+    foto = carrouselImgs.length;
+  }
+  foto--;
 
-    carrouselContainer.style.transform = `translateX(-${anchoImg * foto}%)`
+  carrouselContainer.style.transform = `translateX(-${anchoImg * foto}%)`;
 
-    carrouselImgs.forEach((_, i) => {
-        carrouselImgs[i].classList.remove(`isVisible`)
-    })
-    carrouselImgs[foto].classList.add(`isVisible`)
-    punto.forEach((_, i) => {
-        punto[i].classList.remove(`isActive`)
-    })
-    punto[foto].classList.add(`isActive`)
-})
-
-
+  carrouselImgs.forEach((_, i) => {
+    carrouselImgs[i].classList.remove(`isVisible`);
+  });
+  carrouselImgs[foto].classList.add(`isVisible`);
+  punto.forEach((_, i) => {
+    punto[i].classList.remove(`isActive`);
+  });
+  punto[foto].classList.add(`isActive`);
+});
 
 //Cuando CLICK en Punto
 //Saber la posición de ese punto
 punto.forEach((_, i) => {
-    punto[i].addEventListener(`click`, () => {
-        let posicion = i
-        let operacion = posicion * -33.33
+  punto[i].addEventListener(`click`, () => {
+    let posicion = i;
+    let operacion = posicion * -33.33;
 
-        carrouselContainer.style.transform = `translateX(${operacion}%)`
-    })
-})
+    carrouselContainer.style.transform = `translateX(${operacion}%)`;
+  });
+});
 
 //AÑADIR la clase isActive al punto que hemos hecho click
-punto.forEach(( _ , i )=>{
-    punto[i].addEventListener( `click` , ()=>{
+punto.forEach((_, i) => {
+  punto[i].addEventListener(`click`, () => {
+    foto = i;
+    carrouselImgs.forEach((_, i) => {
+      carrouselImgs[i].classList.remove(`isVisible`);
+    });
+    carrouselImgs[foto].classList.add(`isVisible`);
 
-          foto = i
-          carrouselImgs.forEach(( _ , i )=>{
-            carrouselImgs[i].classList.remove(`isVisible`)
-        })
-        carrouselImgs[foto].classList.add(`isVisible`)
-        
-        punto.forEach(( _ , i )=>{
-            punto[i].classList.remove(`isActive`)
-        })
-        punto[foto].classList.add(`isActive`)
-
-    })
-})
+    punto.forEach((_, i) => {
+      punto[i].classList.remove(`isActive`);
+    });
+    punto[foto].classList.add(`isActive`);
+  });
+});
 
 //Lightbox con suscripción a Newsletter R&R
-const BtnList = document.querySelectorAll(`.Header-btn`)
-const lightbox = document.querySelector(`.Lightbox`)
-const LightboxForm = document.querySelector(`.Lightbox-newsletter`)
-const lightboxCerrar = document.querySelector(`.Lightbox-cerrar`)
+const BtnList = document.querySelectorAll(`.Header-btn`);
+const lightbox = document.querySelector(`.Lightbox`);
+const LightboxForm = document.querySelector(`.Lightbox-newsletter`);
+const lightboxCerrar = document.querySelector(`.Lightbox-cerrar`);
 
+const closeBtnHandler = () => lightbox.classList.remove(`Active`);
+const BtnListHandler = (index) => {
+  lightbox.classList.add(`Active`);
+  LightboxForm.src = BtnList[index].src;
+};
 
-const closeBtnHandler = ()=> lightbox.classList.remove(`Active`)
-const BtnListHandler = index =>{
-    lightbox.classList.add(`Active`)
-    LightboxForm.src = BtnList[index].src
-}
+BtnList.forEach((eachBtn, index) => {
+  BtnList[index].addEventListener(`pointerdown`, () => {
+    BtnListHandler(index);
+  });
+});
 
-BtnList.forEach( ( eachBtn , index )=>{
-    BtnList[index].addEventListener(`pointerdown` , ()=>{
-        BtnListHandler(index)
-    })
-})
-
-lightboxCerrar.addEventListener(`pointerdown` ,  closeBtnHandler )
+lightboxCerrar.addEventListener(`pointerdown`, closeBtnHandler);
 
 //Load more cuando CLICK .Music-button
-var wraper = document.querySelectorAll('.Music-grid');
-var musicBtn = document.querySelector('.Music-button');
+var wraper = document.querySelectorAll(".Music-grid");
+var musicBtn = document.querySelector(".Music-button");
 var currentImg = 1;
 
-musicBtn.addEventListener('click', function() {
-    for (var i = currentImg; i < currentImg + 1; i++) {
-        if (wraper[i]) {
-            wraper[i].style.display = 'grid';
-        }
+musicBtn.addEventListener("click", function () {
+  for (var i = currentImg; i < currentImg + 1; i++) {
+    if (wraper[i]) {
+      wraper[i].style.display = "grid";
     }
-    currentImg +=1
-    if (currentImg>=wraper.length){
-        musicBtn.style.display =`none` 
-    }
-})
+  }
+  currentImg += 1;
+  if (currentImg >= wraper.length) {
+    musicBtn.style.display = `none`;
+  }
+});
 
 //Efecto de scroll con InterjectionObserver
-const MusicNoticia = document.querySelectorAll(`.Music-noticia`)
-console.log(MusicNoticia)
+const MusicNoticia = document.querySelectorAll(`.Music-noticia`);
+console.log(MusicNoticia);
 
 let options = {
-    threshold : [0,1]
-}
+  threshold: [0, 1],
+};
 
-let observer = new IntersectionObserver( (entries)=>{
-    entries.forEach(( entry )=>{
-        let { isIntersecting , target } = entry
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    let { isIntersecting, target } = entry;
 
-        if( isIntersecting ){
-            target.classList.add(`IsVisible`)
-        }
-        // else{
-        //     target.classList.remove(`IsVisible`)
-        // }
-    })
+    if (isIntersecting) {
+      target.classList.add(`IsVisible`);
+    }
+  });
+}, options);
 
-} , options )
+MusicNoticia.forEach((_, i) => {
+  observer.observe(MusicNoticia[i]);
+});
 
-MusicNoticia.forEach(( _ , i )=>{
-    observer.observe(MusicNoticia[i])
-})
+window.addEventListener("scroll", () => {
+  let { scrollY, innerHeight } = window;
+  let { offsetTop } = MusicNoticia;
 
-window.addEventListener('scroll', () => {
-    let { scrollY, innerHeight } = window;
-    let { offsetTop } = MusicNoticia;
+  let puntoActivacion = scrollY >= offsetTop - innerHeight / 1.3;
+  let operacion = scrollY - (offsetTop - innerHeight / 1.3);
 
-    let puntoActivacion = scrollY >= (offsetTop - (innerHeight / 1.3));
-    let operacion = scrollY - (offsetTop - (innerHeight / 1.3));
-
-    requestAnimationFrame(() => {
-        if (puntoActivacion) {
-            MusicNoticia.style.transform = `translateY(${operacion / 2}px)`;
-        }
-    });
+  requestAnimationFrame(() => {
+    if (puntoActivacion) {
+      MusicNoticia.style.transform = `translateY(${operacion / 2}px)`;
+    }
+  });
 });
