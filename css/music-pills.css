@@ -47,8 +47,8 @@ svg {
   --c-red-second: #e03d42;
   --c-red-third: #6d090c;
   --c-white: #ffffff;
-  --c-black-titles: #0a0a0a;
-  --c-black-body: #121212;
+  --c-black-titles: #000000;
+  --c-black-body: #0a0a0a;
   --c-grey: #abb8c3;
 }
 body {
