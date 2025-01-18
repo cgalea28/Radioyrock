@@ -469,6 +469,9 @@ input:not(:focus):invalid {
   display: grid;
   transition: all 0.5s ease;
 }
+.Carrousel-img{
+  width:100%;
+}
 .Carrusel-h3 {
   background-color: var(--c-red-third);
   border: solid 1.5px var(--c-black-titles);
@@ -569,6 +572,9 @@ input:not(:focus):invalid {
   min-height: 12.5rem;
 
   object-fit: cover;
+}
+.Music-img{
+  width: 100%;
 }
 .Music-texts {
   width: 100%;

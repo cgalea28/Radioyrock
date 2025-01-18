@@ -472,10 +472,12 @@ input:not(:focus):invalid {
   margin: auto;
 }
 .Foto-picture {
-  max-height: 45vh;
   width: 90%;
+  max-height: 45vh;
 }
 .Foto-img {
+  width: 80%;
+  margin:auto;
   object-fit: cover;
 }
 .Texto {
@@ -532,6 +534,8 @@ input:not(:focus):invalid {
   max-width: 12.5rem;
 }
 .Lecturas-img {
+  width: 100%;
+  max-width: 700px;
   margin-bottom: 0.3125rem;
 }
 
@@ -754,6 +758,9 @@ input:not(:focus):invalid {
   .Portada-noticias {
     width: 100%;
     flex-flow: row wrap;
+  }
+  .Foto-img {
+    width: 100%;
   }
   .Texto {
     width: 90%;

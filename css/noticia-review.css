@@ -476,6 +476,8 @@ input:not(:focus):invalid {
   width: 90%;
 }
 .Foto-img {
+  width: 80%;
+  margin:auto;
   object-fit: cover;
 }
 .Texto {
@@ -489,7 +491,8 @@ input:not(:focus):invalid {
   object-fit: cover;
 }
 .Texto-img {
-  width: 65%;
+  width:70%;
+  max-width: 700px;
   margin: auto;
   margin-bottom: 1.25rem;
   object-fit: cover;
@@ -533,6 +536,8 @@ input:not(:focus):invalid {
 }
 .Lecturas-img {
   margin-bottom: 0.9375rem;
+  width: 100%;
+  max-width: 700px;
 }
 .Footer {
   width: 100%;
@@ -763,6 +768,9 @@ input:not(:focus):invalid {
     width: 90%;
     margin: auto;
     padding: 0.3125rem;
+  }
+  .Foto-img {
+    width: 100%;
   }
   .Lecturas-seccion {
     width: 100%;

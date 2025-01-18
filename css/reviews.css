@@ -517,6 +517,9 @@ input:not(:focus):invalid {
 
   object-fit: cover;
 }
+.Reviews-img{
+  width: 100%;
+}
 .Reviews-texts {
   width: 100%;
   margin-top: 0.1875rem;
