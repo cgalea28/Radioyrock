@@ -19,3 +19,5 @@ BtnList.forEach((eachBtn, index) => {
 });
 
 lightboxCerrar.addEventListener(`pointerdown`, closeBtnHandler);
+
+//En cada hoja de JS he definido const y var al principio de cada apartado comentado, tanto para mi organización como para que se vea claro, porque todo junto en una lista, sin comentar, me parecía demasiado desorganizado

@@ -79,7 +79,7 @@ button {
 .Nav-a {
   font-size: var(--fs-section-titles);
   color: var(--c-black-titles);
-  transition: all cubic-bezier(0.46, 0.52, 0.76, 0.71);
+  transition: cubic-bezier(0.46, 0.52, 0.76, 0.71);
 }
 .Nav-a:hover,
 .Nav-a:focus-visible {
@@ -96,7 +96,7 @@ button {
 }
 .Titular-h3 {
   font-size: var(--fs-two);
-  transition: all 0.1s ease;
+  transition: 0.1s ease;
 }
 .Titular-h3:hover,
 .Titular-h3:focus-visible {
@@ -106,7 +106,7 @@ button {
   margin: auto;
   font-size: var(--fs-four);
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 .Firma-h4:hover,
 .Firma-h4:focus-visible {
@@ -126,7 +126,7 @@ button {
 
   opacity: 0.4;
   transform: translateY(20%);
-  transition: all 0.6s ease;
+  transition: 0.6s ease;
 }
 .IsVisible {
   opacity: 1;
@@ -165,7 +165,7 @@ button {
   color: var(--c-white);
   border-radius: 50%;
 
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 .Redes-li:hover {
   transform: scale(0.9);
@@ -194,7 +194,7 @@ button {
   text-align: center;
   color: var(--c-white);
 
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 .Header-btn:hover {
   transform: scale(0.9);
@@ -226,7 +226,7 @@ button {
   opacity: 0;
   pointer-events: none;
 
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 .Lightbox.Active {
   opacity: 1;
@@ -244,7 +244,7 @@ button {
   align-items: center;
 
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 .Lightbox-cerrar:hover {
   transform: scale(0.9);
@@ -414,7 +414,7 @@ input:not(:focus):invalid {
   padding: 2px;
 
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 .Buscar-bar button:hover {
   transform: scale(0.9);
@@ -429,6 +429,7 @@ input:not(:focus):invalid {
 .Buscar-bar button svg {
   width: 1.125rem;
   height: 1.125rem;
+  fill:var(--c-white);
   margin: auto;
 }
 .Titulo {

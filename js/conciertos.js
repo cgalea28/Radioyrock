@@ -11,8 +11,8 @@ button.addEventListener(`click`, () => {
 let foto = 0;
 
 //Cuando click en .Next
-//foto++
-//.Carrousel-container le STYLE transform: translateX()
+  //foto++
+  //.Carrousel-container le STYLE transform: translateX()
 
 const next = document.querySelector(`.Next`);
 const prev = document.querySelector(`.Prev`);
@@ -75,7 +75,7 @@ punto.forEach((_, i) => {
   });
 });
 
-//AÑADIR la clase isActive al punto que hemos hecho click
+//AÑADIR la clase isActive al punto que he hecho click
 punto.forEach((_, i) => {
   punto[i].addEventListener(`click`, () => {
     foto = i;
@@ -128,7 +128,7 @@ musicBtn.addEventListener("click", function () {
   }
 });
 
-//Efecto de scroll con InterjectionObserver
+//InterjectionObserver (requestAnimationFrame ayudado por ChatGPT para optimización)
 const MusicNoticia = document.querySelectorAll(`.Music-noticia`);
 console.log(MusicNoticia);
 
@@ -163,3 +163,5 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+//En cada hoja de JS he definido const y var al principio de cada apartado comentado, tanto para mi organización como para que se vea claro, porque todo junto en una lista, sin comentar, me parecía demasiado desorganizado

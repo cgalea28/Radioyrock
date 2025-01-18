@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Conciertos Radio&Rock" content="Sección de conciertos de Radio&Rock">
+    <meta name="title" content="Conciertos">
+    <meta name="description" content="Conciertos Radio&Rock, crónicas de conciertos">
     <link rel="stylesheet" href="css/conciertos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,8 @@
     <title>Radio&Rock - Conciertos</title>
 </head>
 <body>
-    <div class="Lightbox">
+    <!-- Al hacer click en el botón del header 'Suscríbete' salta un Lightbox con un formulario para apuntarse a la newsletter -->
+    <section class="Lightbox">
         <button class="Lightbox-cerrar" aria-label="Botón para cerrar">
             <svg class="Lightbox-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
@@ -38,9 +40,8 @@
                 </div>
                 <input class="Form-button" disabled type="submit" value="Suscríbete a Radio&Rock" aria-label="Suscríbete a Radio & Rock">
             </form>
-
         </div>
-    </div>
+    </section>
 
     <header class="Header">
         <div class="Header-sup">
@@ -167,6 +168,7 @@
                     <li class="Nav-li"><a href="music-pills.html" class="Nav-a">Music Pills</a></li>
                     <li class="Nav-li"><a href="reviews.html" class="Nav-a">Reseñas</a></li>
                     <li class="Nav-li"><a href="conciertos.html" class="Nav-a">Conciertos</a></li>
+                    <!-- la sección Fotografías no está enlazada a ninguna página porque no está hecha para este proyecto, hice tres secciones de muestra (Music Pills, Reseñas y Conciertos) excepto esta por tiempo. Tampoco está operativa en los menús de navegación del resto de HTML -->
                     <li class="Nav-li"><a href="#" class="Nav-a">Fotografías</a></li>
                     <li class="Nav-li"><a href="newsletter.html" class="Nav-a">Newsletter R&R</a></li>
                 </ul>
