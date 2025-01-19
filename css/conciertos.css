@@ -48,7 +48,7 @@ svg {
   --c-red-third: #6d090c;
   --c-white: #ffffff;
   --c-black-titles: #000000;
-  --c-black-body: #0a0a0a;
+  --c-black-body:#010203;
   --c-grey: #abb8c3;
 }
 body {
@@ -130,10 +130,22 @@ button {
   margin-bottom: 0.25rem;
   font-family: "Playfair Display";
   font-size:var(--fs-three);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--c-black-body);
 }
-
+.Music-text {
+  font-family: "DM Sans";
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: var(--c-white);
+}
+.Footer-h4 {
+  font-family: "DM Sans";
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: var(--c-black-body);
+}
 .Header {
   width: 100%;
   background-color: var(--c-white);
@@ -193,9 +205,11 @@ button {
 
   margin: 0.625rem;
   padding: 0.625rem;
+  
   text-align: center;
   color: var(--c-white);
 
+  cursor:pointer;
   transition: 0.5s ease;
 }
 .Header-btn:hover {
@@ -208,6 +222,7 @@ button {
 .Header-btn:focus-visible {
   background: var(--c-red-second);
 }
+/*Accesible desde el botón superior derecho "Suscríbete"*/
 .Lightbox {
   width: 100%;
   height: 100%;
@@ -344,13 +359,16 @@ input:not(:focus):invalid {
 .Form-button:focus-visible {
   background: var(--c-red-third);
 }
+/*Menú inferior desplegable y de color rojo*/
 .Header-inf {
   width: 90%;
   background-color: var(--c-red-primary);
   border-top: 2px solid var(--c-black-titles);
   border-bottom: 2px solid var(--c-black-titles);
+
   margin: auto;
   padding: 0.5rem;
+
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: space-between;
@@ -440,6 +458,7 @@ input:not(:focus):invalid {
   fill:var(--c-white);
   margin: auto;
 }
+/*Empieza la portada de la sección*/
 .Portada {
   width: 100%;
   margin: 0.9375rem auto;
@@ -451,7 +470,7 @@ input:not(:focus):invalid {
 }
 .Carrousel {
   width: 90%;
-  max-width: 56.25rem;
+  max-width: 49.8rem;
   min-height: 10rem;
   background-color: var(--c-grey);
   border: solid 1.5px var(--c-black-titles);
@@ -507,7 +526,6 @@ input:not(:focus):invalid {
   left: 0;
   margin-left: 0.9375rem;
 }
-
 .Carrousel-ul {
   padding: 0.3125rem;
   display: flex;
@@ -530,6 +548,7 @@ input:not(:focus):invalid {
 .isActive {
   background-color: var(--c-red-primary);
 }
+/*Empieza el grid de noticias de la sección*/
 .Music {
   width: 100%;
   min-height: 33.75rem;
@@ -587,8 +606,7 @@ input:not(:focus):invalid {
   background-color: var(--c-red-primary);
   border-radius: 5px;
 
-  margin: auto;
-  margin-top: 1.5625rem;
+  margin: 1.5625rem auto;
   padding: 0.625rem;
 
   display: flex;
@@ -613,6 +631,7 @@ input:not(:focus):invalid {
 .Music-button:focus-visible {
   background: var(--c-red-second);
 }
+/*Inicio del footer*/
 .Footer {
   width: 100%;
   background-color: var(--c-grey);
@@ -629,8 +648,7 @@ input:not(:focus):invalid {
 }
 .Footer-logo {
   width: 70%;
-  margin: auto;
-  margin-top: 0.625rem;
+  margin: 0.625rem auto;
 
   display: flex;
   flex-flow: column nowrap;
@@ -641,23 +659,9 @@ input:not(:focus):invalid {
   width: 50%;
   min-height: 3.125rem;
 }
-.Text-h4 {
-  font-family: "DM Sans";
-  letter-spacing: 0.4px;
-  text-align: center;
-  color: var(--c-white);
-}
-.Footer-h4 {
-  font-family: "DM Sans";
-  letter-spacing: 0.4px;
-  text-align: center;
-  color: var(--c-black-body);
-}
 .Footer-redes {
   width: 60%;
-  margin: auto;
-  margin-top: 0.625rem;
-
+  margin: 0.625rem auto;
   padding: 0.3125rem;
 
   display: flex;

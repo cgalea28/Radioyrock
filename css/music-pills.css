@@ -48,7 +48,7 @@ svg {
   --c-red-third: #6d090c;
   --c-white: #ffffff;
   --c-black-titles: #000000;
-  --c-black-body: #0a0a0a;
+  --c-black-body:#010203;
   --c-grey: #abb8c3;
 }
 body {
@@ -122,7 +122,20 @@ button {
   margin-bottom: 0.25rem;
   font-family: "Playfair Display";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--c-black-body);
+}
+.Music-text {
+  font-family: "DM Sans";
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: var(--c-white);
+}
+.Footer-h4 {
+  font-family: "DM Sans";
+  letter-spacing: 0.4px;
+  text-align: center;
   color: var(--c-black-body);
 }
 .Header {
@@ -184,6 +197,7 @@ button {
 
   margin: 0.625rem;
   padding: 0.625rem;
+  
   text-align: center;
   letter-spacing: 0.5px;
   color: var(--c-white);
@@ -201,6 +215,7 @@ button {
 .Header-btn:focus-visible {
   background: var(--c-red-second);
 }
+/*Accesible desde el botón superior derecho "Suscríbete"*/
 .Lightbox {
   width: 100%;
   height: 100%;
@@ -337,6 +352,7 @@ input:not(:focus):invalid {
 .Form-button:focus-visible {
   background: var(--c-red-third);
 }
+/*Menú inferior desplegable y de color rojo*/
 .Header-inf {
   width: 90%;
   background-color: var(--c-red-primary);
@@ -427,6 +443,7 @@ input:not(:focus):invalid {
   fill:var(--c-white);
   margin: auto;
 }
+/*Empieza la portada de la sección*/
 .Portada {
   width: 90%;
   margin: 0.625rem auto;
@@ -474,6 +491,7 @@ input:not(:focus):invalid {
   border-radius: 3px;
   padding: 0.625rem;
 }
+/*Empieza el grid de noticias de la sección*/
 .Music {
   width: 100%;
   min-height: 33.75rem;
@@ -526,8 +544,7 @@ input:not(:focus):invalid {
   background-color: var(--c-red-primary);
   border-radius: 0.3125rem;
 
-  margin: auto;
-  margin-top: 1.5625rem;
+  margin: 1.5625rem auto;
   padding: 0.625rem;
 
   display: flex;
@@ -552,18 +569,7 @@ input:not(:focus):invalid {
 .Music-button:focus-visible {
   background: var(--c-red-second);
 }
-.Text-h4 {
-  font-family: "DM Sans";
-  letter-spacing: 0.4px;
-  text-align: center;
-  color: var(--c-white);
-}
-.Footer-h4 {
-  font-family: "DM Sans";
-  letter-spacing: 0.4px;
-  text-align: center;
-  color: var(--c-black-body);
-}
+/*Inicio del footer*/
 .Footer {
   width: 100%;
   background-color: var(--c-grey);
@@ -580,8 +586,7 @@ input:not(:focus):invalid {
 }
 .Footer-logo {
   width: 70%;
-  margin: auto;
-  margin-top: 0.625rem;
+  margin: 0.625rem auto;
 
   display: flex;
   flex-flow: column nowrap;
@@ -594,9 +599,7 @@ input:not(:focus):invalid {
 }
 .Footer-redes {
   width: 60%;
-  margin: auto;
-  margin-top: 0.625rem;
-
+  margin:0.625rem auto;
   padding: 0.3125rem;
 
   display: flex;

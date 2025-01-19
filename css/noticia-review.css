@@ -48,7 +48,7 @@ svg {
   --c-red-third: #6d090c;
   --c-white: #ffffff;
   --c-black-titles: #000000;
-  --c-black-body: #0a0a0a;
+  --c-black-body: #010203;
   --c-grey: #abb8c3;
 }
 body {
@@ -93,6 +93,11 @@ button {
   font-size: var(--fs-section-titles);
   text-align: center;
   color: var(--c-white);
+}
+.Titulo-sub{
+  margin:10px;
+  font-size:var(--fs-section-titles);
+  font-weight: 600;
 }
 .Titular-h3 {
   font-size: var(--fs-two);
@@ -191,9 +196,11 @@ button {
 
   margin: 0.625rem;
   padding: 0.625rem;
+  
   text-align: center;
   color: var(--c-white);
 
+  cursor:pointer;
   transition: 0.5s ease;
 }
 .Header-btn:hover {
@@ -206,6 +213,7 @@ button {
 .Header-btn:focus-visible {
   background: var(--c-red-second);
 }
+/*Accesible desde el botón superior derecho "Suscríbete"*/
 .Lightbox {
   width: 100%;
   height: 100%;
@@ -342,6 +350,7 @@ input:not(:focus):invalid {
 .Form-button:focus-visible {
   background: var(--c-red-third);
 }
+/*Menú inferior desplegable y de color rojo*/
 .Header-inf {
   width: 90%;
   background-color: var(--c-red-primary);
@@ -434,6 +443,7 @@ input:not(:focus):invalid {
   fill:var(--c-white);
   margin: auto;
 }
+/*Empieza la estructura del texto*/
 .Titulo {
   width: 90%;
 
@@ -463,7 +473,7 @@ input:not(:focus):invalid {
   margin-bottom: 1.25rem;
 
   font-size: var(--fs-three);
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.75rem;
   color: var(--c-black-body);
   hyphens: auto;
@@ -473,11 +483,10 @@ input:not(:focus):invalid {
   margin: auto;
 }
 .Foto-picture {
-  max-height: 45vh;
-  width: 90%;
+  max-height: 40vh;
+  width: 80%;
 }
 .Foto-img {
-  width: 80%;
   margin:auto;
   object-fit: cover;
 }
@@ -540,6 +549,7 @@ input:not(:focus):invalid {
   width: 100%;
   max-width: 700px;
 }
+/*Inicio del footer*/
 .Footer {
   width: 100%;
   background-color: var(--c-grey);
@@ -557,8 +567,7 @@ input:not(:focus):invalid {
 }
 .Footer-logo {
   width: 70%;
-  margin: auto;
-  margin-top: 0.625rem;
+  margin: 0.625rem auto;
 
   display: flex;
   flex-flow: column nowrap;
@@ -577,9 +586,8 @@ input:not(:focus):invalid {
 }
 .Footer-redes {
   width: 60%;
-  margin: auto;
-  margin-top: 0.625rem;
-
+  
+  margin: 0.625rem auto;
   padding: 0.3125rem;
 
   display: flex;

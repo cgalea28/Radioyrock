@@ -25,7 +25,7 @@
 <body>
     <!-- Al hacer click en el botón del header 'Suscríbete' salta un Lightbox con un formulario para apuntarse a la newsletter -->
     <section class="Lightbox">
-        <button class="Lightbox-cerrar" aria-label="botón cerrar">
+        <button class="Lightbox-cerrar" title="botón cerrar">
             <svg class="Lightbox-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
             </svg>
@@ -55,7 +55,7 @@
         <div class="Header-sup">
             <ul class="Header-redes Redes">
                 <li class="Redes-li">
-                    <a href="https://www.instagram.com/radioyrock/" class="Redes-a" target="_blank"
+                    <a title="Instagram" href="https://www.instagram.com/radioyrock/" class="Redes-a" target="_blank"
                         rel="noopener noreferrer" aria-label="Go to Instagram app">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title />
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li class="Redes-li">
-                    <a href="mailto:radioyrock.gmc@gmail.com" class="Redes-a" target="_blank" rel="noopener noreferrer" aria-label="Send email">
+                    <a title="Email" href="mailto:radioyrock.gmc@gmail.com" class="Redes-a" target="_blank" rel="noopener noreferrer" aria-label="Send email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             viewBox="0 0 16 16">
                             <path
@@ -74,7 +74,7 @@
                     </a>
                 </li>
                 <li class="Redes-li">
-                    <a href="https://open.spotify.com/user/r953s5d3l5vtt7dio5edq7sb3?si=b8666b39d0f14eab"
+                    <a title="Spotify" href="https://open.spotify.com/user/r953s5d3l5vtt7dio5edq7sb3?si=b8666b39d0f14eab"
                         class="Redes-a" target="_blank" rel="noopener noreferrer" aria-label="Open Spotify">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-tiktok" viewBox="0 0 16 16">
@@ -85,7 +85,7 @@
                 </li>
             </ul>
             <h1 class="Header-logo">
-                <a class="Header-picture" href="index.html" aria-label="Radio & Rock logo">
+                <a class="Header-picture" href="index.html" title="Radio & Rock logo">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 558.9 152.4"
                         style="enable-background:new 0 0 558.9 152.4;" xml:space="preserve">
@@ -164,13 +164,13 @@
                     </svg>
                 </a>
             </h1>
-            <a href="#" class="Header-btn">Suscríbete</a>
+            <button class="Header-btn" title="Botón suscríbete a la newsletter">Suscríbete</button>
         </div>
         <div class="Header-inf">
             <div class="Header-lupa">
                 <form action="#" class="Buscar-bar">
                     <input type="text" placeholder="  Busca aquí" name="Q" autocomplete="off">
-                    <button type="submit" aria-label="buscar">
+                    <button type="submit" title="buscar">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
                             <path
@@ -179,7 +179,7 @@
                     </button>
                 </form>
             </div>
-            <button class="Header-button" aria-label="menú de navegación">
+            <button class="Header-button" title="menú de navegación">
                 <svg class="Header-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <style>
@@ -196,13 +196,13 @@
             </button>
             <nav class="Header-nav IsActive">
                 <ul class="Nav-ul">
-                    <li class="Nav-li"><a href="index.html" class="Nav-a">Inicio</a></li>
-                    <li class="Nav-li"><a href="music-pills.html" class="Nav-a">Music Pills</a></li>
-                    <li class="Nav-li"><a href="reviews.html" class="Nav-a">Reseñas</a></li>
-                    <li class="Nav-li"><a href="conciertos.html" class="Nav-a">Conciertos</a></li>
+                    <li class="Nav-li"><a title="Inicio" href="index.html" class="Nav-a">Inicio</a></li>
+                    <li class="Nav-li"><a title="Music Pills" href="music-pills.html" class="Nav-a">Music Pills</a></li>
+                    <li class="Nav-li"><a title="Reseñas" href="reviews.html" class="Nav-a">Reseñas</a></li>
+                    <li class="Nav-li"><a title="Conciertos" href="conciertos.html" class="Nav-a">Conciertos</a></li>
                     <!-- la sección Fotografías no está enlazada a ninguna página porque no está hecha para este proyecto, hice tres secciones de muestra (Music Pills, Reseñas y Conciertos) excepto esta por tiempo. Tampoco está operativa en los menús de navegación del resto de HTML -->
-                    <li class="Nav-li"><a href="#" class="Nav-a">Fotografías</a></li>
-                    <li class="Nav-li"><a href="newsletter.html" class="Nav-a">Newsletter R&R</a></li>
+                    <li class="Nav-li"><a title="Fotografías" href="https://www.behance.net/gallery/204135627/Fotografias-de-conciertos-(2018-2024)" class="Nav-a" target="_blank" rel="noopener noreferrer">Fotografías</a></li>
+                    <li class="Nav-li"><a title="Newsletter R&R" href="newsletter.html" class="Nav-a">Newsletter R&R</a></li>
                 </ul>
             </nav>
         </div>
@@ -219,7 +219,7 @@
                     <img class="Portada-img" src="assets/mp-KGLW.webp" alt="King Gizzard and the Lizard Wizard">
                 </picture>
                 <div class="Portada-text">
-                    <h3 class="Titular-h3 Titular-h3--portada"><a href="noticia-musicpills.html">El universo de King Gizzard & the Lizard Wizard</a></h3>
+                    <h3 class="Titular-h3 Titular-h3--portada"><a title="El universo de King Gizzard & the Lizard Wizard" href="noticia-musicpills.html">El universo de King Gizzard & the Lizard Wizard</a></h3>
                     <p class="Parrafo-p">Escribir un perfil sobre este grupo es una osadía que únicamente el tiempo
                         permite tras la publicación de sus dos últimos discos: <i>PetroDragonic Apocalypse or, Dawn of
                             Eternal Night: An Annihilation of Planet Earth and the Beginning of Merciless Damnation</i>
@@ -229,22 +229,22 @@
             </div>
             <div class="Portada-noticias">
                 <div class="Portada-noticia">
-                    <h3 class="Titular-h3"><a href="noticia-musicpills.html">The White Stripes - Under Great White Northern Lights</a></h3>
+                    <h3 class="Titular-h3"><a title="The White Stripes - Under Great White Northern Lights" href="noticia-musicpills.html">The White Stripes - Under Great White Northern Lights</a></h3>
                     <p class="Parrafo-p">Este es el viaje de un disco como <i>Icky Thump</i> por centros de mayores,
                         autobuses regulares, barcas de recreo, plazas de pueblo o billares. Y salas de conciertos,
                         claro.</p>
-                    <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                    <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                 </div>
                 <div class="Portada-noticia">
-                    <h3 class="Titular-h3"><a href="noticia-musicpills.html">Las miradas de The Smile</a></h3>
+                    <h3 class="Titular-h3"><a title="Las miradas de The Smile" href="noticia-musicpills.html">Las miradas de The Smile</a></h3>
                     <p class="Parrafo-p">Con A Light For Attracting Attention ya sentaron una base muy interesante que se expande en Wall Of Eyes, segundo disco del trío formado por Thom Yorke, Tom Skinner y Jonny Greenwood.</p>
-                    <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                    <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                 </div>
                 <div class="Portada-noticia">
-                    <h3 class="Titular-h3"><a href="noticia-musicpills.html">Buceando en la autobiografía de Eric Clapton</a></h3>
+                    <h3 class="Titular-h3"><a title="Buceando en la autobiografía de Eric Clapton" href="noticia-musicpills.html">Buceando en la autobiografía de Eric Clapton</a></h3>
                     <p class="Parrafo-p">Clapton Is God, Slowhand… Eric Clapton se ha ganado con trabajo, práctica y
                         oficio lo que su nombre significa dentro del blues y del rock británico a día de hoy.</p>
-                    <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                    <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                 </div>
             </div>
         </section>
@@ -258,10 +258,10 @@
                         <img src="assets/mp-suede.webp" alt="Suede" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">Suede, treinta años de intenso y turbulento viaje</a></h3>
+                        <h3 class="Titular-h3"><a title="Suede, treinta años de intenso y turbulento viaje" href="noticia-musicpills.html">Suede, treinta años de intenso y turbulento viaje</a></h3>
                         <p class="Parrafo-p">Un camino largo que, por momentos, llevó al límite las relaciones
                             artísticas y personales.</p>
-                        <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                        <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
                 <div class="Music-noticia">
@@ -269,10 +269,10 @@
                         <img src="assets/mp-depedro.webp" alt="Depedro" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">Depedro, la increíble historia de un hombre bueno</a></h3>
+                        <h3 class="Titular-h3"><a title="Depedro, la increíble historia de un hombre bueno" href="noticia-musicpills.html">Depedro, la increíble historia de un hombre bueno</a></h3>
                         <p class="Parrafo-p">Una carrera discográfica llena de cariño y de trabajo duro, contada a
                             través del tiempo.</p>
-                            <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                            <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
                 <div class="Music-noticia">
@@ -280,10 +280,10 @@
                         <img src="assets/mp-jackwhite.webp" alt="Jack White" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">El poliédrico Jack White</a></h3>
+                        <h3 class="Titular-h3"><a title="El poliédrico Jack White" href="noticia-musicpills.html">El poliédrico Jack White</a></h3>
                         <p class="Parrafo-p">El talento le rezuma por los poros cuando coge una guitarra. Él es Jack
                             White. O, al menos, un retrato atemporal de su persona musical.</p>
-                            <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                            <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
                 <div class="Music-noticia">
@@ -291,10 +291,10 @@
                         <img src="assets/mp-natalia.webp" alt="Natalia Lafourcade" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">Todas las flores de Natalia Lafourcade</a></h3>
+                        <h3 class="Titular-h3"><a title="Todas las flores de Natalia Lafourcade" href="noticia-musicpills.html">Todas las flores de Natalia Lafourcade</a></h3>
                         <p class="Parrafo-p"> <i>De Todas Las Flores</i> Un disco que recoge cada estación del año,
                             cada etapa de la vida y de los ciclos biológicos.</p>
-                            <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                            <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
             </div>
@@ -304,10 +304,10 @@
                         <img src="assets/mp-depedro.webp" alt="Depedro" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">Depedro, la increíble historia de un hombre bueno</a></h3>
+                        <h3 class="Titular-h3"><a title="Depedro, la increíble historia de un hombre bueno" href="noticia-musicpills.html">Depedro, la increíble historia de un hombre bueno</a></h3>
                         <p class="Parrafo-p">Una carrera discográfica llena de cariño y de trabajo duro, contada a
                             través del tiempo.</p>
-                            <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                            <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
                 <div class="Music-noticia">
@@ -315,10 +315,10 @@
                         <img src="assets/mp-suede.webp" alt="Suede" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">Suede, treinta años de intenso y turbulento viaje</a></h3>
+                        <h3 class="Titular-h3"><a title="Suede, treinta años de intenso y turbulento viaje" href="noticia-musicpills.html">Suede, treinta años de intenso y turbulento viaje</a></h3>
                         <p class="Parrafo-p">Un camino largo que, por momentos, llevó al límite las relaciones
                             artísticas y personales.</p>
-                        <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                        <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
                 <div class="Music-noticia">
@@ -326,10 +326,10 @@
                         <img src="assets/mp-natalia.webp" alt="Natalia Lafourcade" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">Todas las flores de Natalia Lafourcade</a></h3>
+                        <h3 class="Titular-h3"><a title="Todas las flores de Natalia Lafourcade" href="noticia-musicpills.html">Todas las flores de Natalia Lafourcade</a></h3>
                         <p class="Parrafo-p"> <i>De Todas Las Flores</i> Un disco que recoge cada estación del año,
                             cada etapa de la vida y de los ciclos biológicos.</p>
-                            <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
+                            <h4 class="Firma-h4"><a title="LEER MÁS" href="noticia-musicpills.html">LEER MÁS</a></h4>
                     </div>
                 </div>
                 <div class="Music-noticia">
@@ -337,7 +337,7 @@
                         <img src="assets/mp-jackwhite.webp" alt="Jack White" loading="lazy">
                     </picture>
                     <div class="Music-texts">
-                        <h3 class="Titular-h3"><a href="noticia-musicpills.html">El poliédrico Jack White</a></h3>
+                        <h3 class="Titular-h3"><a title="El poliédrico Jack White" href="noticia-musicpills.html">El poliédrico Jack White</a></h3>
                         <p class="Parrafo-p">El talento le rezuma por los poros cuando coge una guitarra. Él es Jack
                             White. O, al menos, un retrato atemporal de su persona musical.</p>
                             <h4 class="Firma-h4"><a href="noticia-musicpills.html">LEER MÁS</a></h4>
@@ -345,15 +345,14 @@
                 </div>
             </div>
 
-            <div class="Music-button">
-                <h4 class="Text-h4">Ver más</h4>
-                <div class="Music-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+            <button class="Music-button" title="Ver más">
+                <span class="Music-text">Ver más</span>
+                <span class="Music-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
                     </svg>
-                </div>
-            </div>
+                </span>
+            </button>
         </section>
     </main>
 
@@ -443,7 +442,7 @@
             </div>
             <ul class="Footer-redes">
                 <li class="Redes-li">
-                    <a href="https://www.instagram.com/radioyrock/" class="Redes-a" target="_blank"
+                    <a title="Instagram" href="https://www.instagram.com/radioyrock/" class="Redes-a" target="_blank"
                         rel="noopener noreferrer" aria-label="Open Instagram">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title />
@@ -453,7 +452,7 @@
                     </a>
                 </li>
                 <li class="Redes-li">
-                    <a href="mailto:radioyrock.gmc@gmail.com" class="Redes-a" target="_blank" rel="noopener noreferrer" aria-label="Send email">
+                    <a title="Email" href="mailto:radioyrock.gmc@gmail.com" class="Redes-a" target="_blank" rel="noopener noreferrer" aria-label="Send email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             viewBox="0 0 16 16">
                             <path
@@ -462,7 +461,7 @@
                     </a>
                 </li>
                 <li class="Redes-li">
-                    <a href="https://open.spotify.com/user/r953s5d3l5vtt7dio5edq7sb3?si=b8666b39d0f14eab"
+                    <a title="Spotify" href="https://open.spotify.com/user/r953s5d3l5vtt7dio5edq7sb3?si=b8666b39d0f14eab"
                         class="Redes-a" target="_blank" rel="noopener noreferrer" aria-label="Open Spotify">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             viewBox="0 0 16 16">
